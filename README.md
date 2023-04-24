@@ -10,6 +10,10 @@ RFID (Radio Frequency Identification) is a wireless system that leverages radio 
 
 The Binary Tree protocol takes fewer slots, on average, to identify up to 2000 tags compared to the Gen 1 protocol. It was found that the Binary Tree protocol is more efficient overall relative to slot usage.
 
+## Implementation
+
+This project simulates and compares the performance of two RFID anti-collision algorithms: Gen 1 protocol and Binary Tree protocol. The code is organized into several files, with main.py running the simulations, plotter.py handling the visualization using matplotlib, and reader.py implementing the core algorithms. The simulation process calculates the number of slots needed for successful tag identification for various sample sizes, and the results are graphed using the Plot and MultiPlot classes. The GenOneTagReader and BinaryTagReader subclasses of BaseTagReader in reader.py manage tag collisions, while the run_simulation() function in simulation.py simulates tag-reader communication. Finally, the simulation results are plotted alongside the research paper data for comparison.
+
 ## Dependencies
 
 - Python 3
